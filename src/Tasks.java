@@ -1,0 +1,55 @@
+public class Tasks {
+    public static void main(String[] args) {
+        task1();
+        task2();
+        task3();
+
+    }
+
+    private static void task3() {
+//        Система, в которой мы работаем, не принимает символ «ё».
+//        Напишите программу, которая заменяет символ «ё» на символ «е».
+//
+//     Выведите результат программы в консоль в формате: «Данные ФИО сотрудника — ...».
+        System.out.println("\n  TASK3");
+
+        String fullname = "Иванов Семён Семёнович";
+        fullname = fullname.replace('ё', 'е');
+        System.out.println("Данные ФИО сотрудника — " + fullname);
+    }
+
+    private static void task2() {
+        /**
+         * Для ежемесячного отчета и ведения документации бухгалтерии нужны Ф. И. О. сотрудников,
+         * полностью написанные заглавными буквами (верхним регистром).
+         *
+         * Напишите программу, которая изменит написание Ф. И. О. сотрудника
+         * с "Ivanov Ivan Ivanovich" на полностью заглавные буквы.
+         *
+         * В качестве строки с исходными данными используйте строку fullName.
+         *
+         * Результат программы выведите в консоль в формате:
+         * "Данные ФИО сотрудника для заполнения отчета — …"
+         */
+        System.out.println("\n TASK 2");
+        String fullname = "Ivanov Ivan Ivanovich";
+        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullname.toUpperCase());
+    }
+
+    private static void task1() {
+        /**
+         * Представьте, что вы работаете в небольшой компании.
+         * Данные сотрудников хранятся в неструктурированном формате.
+         * Бухгалтерия попросила написать программу, в которой  можно работать с Ф. И. О. сотрудников.
+         */
+        System.out.println("TASK 1");
+
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String  fullName = lastName + " " + firstName + " " + middleName;
+
+        System.out.println("ФИО сотрудника : " + fullName);
+    }
+
+}
